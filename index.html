@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      form{
+         width: 250px;
+         border: 2px solid;
+         padding: 30px;
+         border-radius: 10px;
+         background-color: whitesmoke;
+         box-shadow: 0px 0px 8px lawngreen ;
+      }
+      input{
+            padding: 10px;
+            border-radius: 8px;
+            border-style: none;
+            box-shadow: 0px 0px 6px lightgreen;
+      }
+      #submit{
+          background-color: green;
+            width: 100px;
+            color: white;
+      }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Registration Forms</h1>
+        <form action="https://www.google.com" onsubmit="return validation()">
+             <div>
+                <label for="">username</label><br><br>
+                <input type="text" name="" id="username">
+                <p id="erroru"></p>
+             </div>
+             <div>
+                <label for="">password</label><br><br>
+                <input type="password" name="" id="password">
+                <p id="errorp"></p>
+             </div>
+             <div>
+                <label for="">mobile number</label><br><br>
+                <input type="number" name="" id="mobile">
+                <p id="errorm"></p>
+             </div>
+             <div>
+                <label for="">Aadhaar</label><br><br>
+                <input type="text" name="" id="aadhaar">
+                <p id="errora"></p>
+             </div>
+             <div>
+                <label for="">pancard</label><br><br>
+                <input type="text" name="" id="pancard">
+                <p id="errorpc"></p>
+             </div>
+             <div>
+                <label for="">email</label><br><br>
+                <input type="email" name="" id="email">
+                <p id="errorem"></p>
+             </div>
+
+
+             <input type="submit" id="submit">
+        </form>
+
+    </center>
+
+    <script src="app.js"></script>
+</body>
+</html>
+<!--
+regex:
+regular expression
+
+regex is a pattern which is used for form validations perform on string characters
+
+// - between two foward slashes we write
+^ - start symbol
+$ - end symbol
+
+syntax for pattern:-
+username pattern = /^[A-Z]{1}[a-z]{3,8}$/
+mobile number pattern = /^[6-9]{1}[0-9]{9}$/
+pancard pattern = /^[A-Z]{5}[0-9]{4}[A-Z]{1}$/
+aadhaar card pattern = /^[0-9]{4} [0-9]{4} [0-9]{4}$/
+password pattern = /^[A-Z]{1}[a-z!@#%&*]{3,8}[0-9]{1}$/
+mail pattern = /^[A-Za-z0-9]{8,12}+@[A-Za-z]{5}+\.[A-Za-z]{2,}$/
+
+
+first letter is capital - 1
+remaining small letters - 3,8
+
+
+
+
+
+
+
+
+
+-->
